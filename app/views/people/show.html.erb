@@ -6,5 +6,5 @@
   <%= link_to "Edit this person", edit_person_path(@person) %> |
   <%= link_to "Back to people", people_path %>
 
-  <%= button_to "Destroy this person", @person, method: :delete %>
+  <%= button_to "Destroy this person", @person, method: :delete, data: { turbo_confirm: "This is Permanent. Go ahead if you're sure." } %>
 </div>

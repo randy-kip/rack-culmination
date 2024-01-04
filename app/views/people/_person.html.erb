@@ -9,4 +9,11 @@
     <%= person.email %>
   </p>
 
+  <ol>
+    <strong>Plants:</strong>
+    <% person.plants.each do |plant| %>
+      <li><%= link_to plant.name, plant %></li>
+    <% end %>
+  </ol>
+
 </div>
