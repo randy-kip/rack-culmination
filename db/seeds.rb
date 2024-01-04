@@ -6,6 +6,12 @@
 #   movies = Movie.create([{ name: "Star Wars" }, { name: "Lord of the Rings" }])
 #   Character.create(name: "Luke", movie: movies.first)
 
+# Destroy all existing records
+puts '...destroying current data!'
+
+Person.destroy_all
+Plant.destroy_all
+
 puts 'Seeding started...'
 
 # Seed data for Plant
